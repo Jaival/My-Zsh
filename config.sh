@@ -10,15 +10,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-git clone https://github.com/powerline/fonts.git --depth=1
-
-cd fonts
-
-./install.sh
-
-cd ..
-
-rm -rf fonts
+sudo apt-get install fonts-powerline -y
 
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
@@ -32,4 +24,4 @@ git clone https://github.com/b4b4r07/enhancd.git
 
 zplug "b4b4r07/enhancd", use:init.sh
 
-sudo apt-get install fzy
+sudo apt-get install fzy -y
